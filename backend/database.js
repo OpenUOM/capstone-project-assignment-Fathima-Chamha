@@ -56,7 +56,7 @@ const addTeacher = async (id, name, age) => {
         knex_db
             .raw(sql, [id, name, age])
             .then(() => {
-                resolve({ status: "Successfully inserted Teacher" })
+                resolve({status: "Successfully inserted Teacher"})
             })
             .catch((error) => {
                 reject(error);
@@ -71,7 +71,7 @@ const updateTeacher = async (name, age, id) => {
         knex_db
             .raw(sql, [name, age, id])
             .then(() => {
-                resolve({ status: "Successfully updated Teacher" })
+                resolve({status: "Successfully updated Teacher"})
             })
             .catch((error) => {
                 reject(error);
@@ -85,7 +85,7 @@ const deleteTeacher = async (id) => {
         knex_db
             .raw(sql, [id])
             .then(() => {
-                resolve({ status: "Successfully deleted Teacher" })
+                resolve({status: "Successfully deleted Teacher"})
             })
             .catch((error) => {
                 reject(error);
@@ -128,7 +128,7 @@ const addStudent = async (id, name, age, hometown) => {
         knex_db
             .raw(sql, [id, name, age, hometown])
             .then(() => {
-                resolve({ status: "Successfully inserted Student" });
+                resolve({status: "Successfully inserted Student"});
             })
             .catch((error) => {
                 reject(error);
@@ -142,7 +142,7 @@ const updateStudent = async (name, age, hometown, id) => {
         knex_db
             .raw(sql, [name, age, hometown, id])
             .then(() => {
-                resolve({ status: "Successfully updated Student" });
+                resolve({status: "Successfully updated Student"});
             })
             .catch((error) => {
                 reject(error);
@@ -156,7 +156,7 @@ const deleteStudent = async (id) => {
         knex_db
             .raw(sql, [id])
             .then(() => {
-                resolve({ status: "Successfully deleted Student" });
+                resolve({status: "Successfully deleted Student"});
             })
             .catch((error) => {
                 reject(error);
